@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgrey;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-img {
+    flex: 1;
+    background-image: url(../img/main-img.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    max-width: 35%;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    flex: 1;
+}
+
+.top-section, .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    background-color: white;
+}
+
+form {
+    background-color: lightblue;
+    display: flex;
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section, .form, .bottom-section {
+    flex-grow: 1;
+}

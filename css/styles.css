@@ -20,7 +20,8 @@ body {
 }
 
 .title {
-    height: 8rem;
+    min-height: 8rem;
+    height: fit-content;
     background-color: rgba(00,00,00,30%);
     position: relative;
     top: 40%;
@@ -84,7 +85,7 @@ input:focus {
 .error {
     margin-left: 5rem;
     color: red;
-    margin-top: -2.5rem;
+    margin-top: -2rem;
 }
 
 .left-side, .right-side {
@@ -116,12 +117,35 @@ button {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 400px) {
+button:hover {
+    background-color: rgb(88, 187, 248);
+}
+
+.bottom-info {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+a:hover {
+   color:  rgb(88, 187, 248);
+}
+
+@media only screen and (max-width: 500px) {
     .main-img {
-        max-height: 15rem;
+        max-height: 25rem;
     }
 
     body {
         display: block;
+    }
+
+    .header {
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 }

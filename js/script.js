@@ -9,7 +9,11 @@ function verifyPassword() {
     let pwv = pw.value;
     let pwcv = pwc.value;
 
-    if(pwv == '' || pwcv == '') {
+    if(pwv =='' && pwcv == '') {
+        pw.style.border = '1px solid rgb(221, 210, 210)';
+        pwc.style.border = '1px solid rgb(221, 210, 210)';
+        removeError();
+    } else if(pwv == '' || pwcv == '') {
         pw.style.border = '2px solid lightskyblue';
         pwc.style.border = '2px solid lightskyblue';
         removeError();
